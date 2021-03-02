@@ -21,19 +21,22 @@ class MyClassroomWork1 extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    color: Colors.amber,
+                    color: Colors.teal,
                     child: Center(
                       child: Container(
                         width: 100,
                         height: 200,
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
-                              color: Colors.red,
+                            Expanded(
+                              child: Container(
+                                color: Colors.amber,
+                              ),
                             ),
-                            Container(
-                              color: Colors.red,
+                            Expanded(
+                              child: Container(
+                                color: Colors.green,
+                              ),
                             ),
                           ],
                         ),
