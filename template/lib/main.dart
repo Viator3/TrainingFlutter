@@ -8,19 +8,21 @@ class MyTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.redAccent,
         appBar: AppBar(
           title: Text('App Bar'),
         ),
-        body: Center(
-          child: Container(
-            color: Colors.greenAccent,
-            child: Column(
-              children: [
-                Text('Text 1'),
-              ],
+        body: SafeArea(
+          child: Center(
+            child: Container(
+              color: Colors.greenAccent,
+              child: Column(
+                children: [
+                  Text('Text 1'),
+                ],
+              ),
             ),
           ),
         ),
